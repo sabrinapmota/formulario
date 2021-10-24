@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário de cadastro</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <form class="formulario" method="post"> 
+        <p> Preencha todos os campos para efetoar o cadastro.</p>
+        
+        <div class="field">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+        
+        <div class="field">
+            <label for="telefone">Seu Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone" required>
+        </div>
+        <div class="field radiobox">
+            <p> Selecione o sexo</p>
+            <input type="radio" name="sexo" id="feminino" value="feminino" checked><label for="feminino">Feminino</label>
+            <input type="radio" name="sexo" id="masculino" value="masculino"><label for="masculino">Masculino</label>
+<input type="radio" name="sexo" id="nao especificado" value="nao especificado"><label for="nao especificado">Não especificado</label>        
+</div>
+
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+</body>
+</html>
